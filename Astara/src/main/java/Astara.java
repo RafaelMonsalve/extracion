@@ -44,16 +44,16 @@ public class Astara {
                 CODDIRECCION = line.substring(11, 19);
                 ESTADO = line.substring(19, 21);
                 CODCLIENTE = line.substring(21, 23);
-                CAMPA = line.substring(24, 81);
+                CAMPA = line.substring(30, 81);
                 TIPOVIA = line.substring(111,130);
                 DESCDIRECCION=line.substring(130,161);
                 NUMEROVIA=line.substring(211,215);
                 EXTENSIONDIRECCION=line.substring(210,240);
-                LOCALIDAD=line.substring(215,290);
-                CODIGOPOSTAL=line.substring(280,297);
-                PROVINCIA=line.substring(298,347);
-                //TLFCONTACTO=line.substring(348,362);
-                //FECHACREACIONSIL=line.substring(363,370);
+                LOCALIDAD=line.substring(215,240);
+                CODIGOPOSTAL=line.substring(239,253);
+                PROVINCIA=line.substring(290,312);
+                TLFCONTACTO=line.substring(347,358);
+                FECHACREACIONSIL=line.substring(362,370);
                 //FECHAMODIFICACIONSIL=line.substring(371,379);
                 System.out.println(
 
@@ -68,10 +68,9 @@ public class Astara {
                                 +EXTENSIONDIRECCION+"|"
                                 +LOCALIDAD+"|"
                                 +CODIGOPOSTAL+"|"
-                                +PROVINCIA
-                                //+TLFCONTACTO+"|"
-                                //+TLFCONTACTO+"|"
-                               // +FECHACREACIONSIL+"|"
+                                +PROVINCIA+"|"
+                                +TLFCONTACTO+"|"
+                               +FECHACREACIONSIL+"|"
                                // +FECHAMODIFICACIONSIL
                         );
             }
