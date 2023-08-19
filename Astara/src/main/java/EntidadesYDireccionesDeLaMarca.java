@@ -142,15 +142,3 @@ public class EntidadesYDireccionesDeLaMarca {
                 ", FECHAMODIFICACIONSIL=" + FECHAMODIFICACIONSIL +
                 '}';
     }
-
-    public static void main(String[] args) {
-        EntidadesYDireccionesDeLaMarca data = new EntidadesYDireccionesDeLaMarca(
-                "C:\\Users\\rafael.monsalve\\Documents\\Astara\\INPUT\\ENTDIR_CO_20230721171152(2).txt",
-                "CODENTIDAD", "CODDIRECCION", "ESTADO", "CODCLIENTE", "CAMPA", "TIPOVIA", "DESCDIRECCION",
-                "NUMEROVIA", "EXTENSIONDIRECCION", "LOCALIDAD", "CODIGOPOSTAL", "PROVINCIA", "TLFCONTACTO",
-                new Date(), new Date());
-
-        System.out.println(data.toString());
-    }
-}
-
