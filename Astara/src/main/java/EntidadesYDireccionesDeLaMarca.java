@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Extraccion {
+public class EntidadesYDireccionesDeLaMarca {
     private String fileName;
     private String CODENTIDAD;
     private String CODDIRECCION;
@@ -18,11 +18,10 @@ public class Extraccion {
     private Date FECHACREACIONSIL;
     private Date FECHAMODIFICACIONSIL;
 
-    // Constructor
-    public Extraccion(String fileName, String CODENTIDAD, String CODDIRECCION, String ESTADO,
-                    String CODCLIENTE, String CAMPA, String TIPOVIA, String DESCDIRECCION,
-                    String NUMEROVIA, String EXTENSIONDIRECCION, String LOCALIDAD, String CODIGOPOSTAL,
-                    String PROVINCIA, String TLFCONTACTO, Date FECHACREACIONSIL, Date FECHAMODIFICACIONSIL) {
+    public EntidadesYDireccionesDeLaMarca(String fileName, String CODENTIDAD, String CODDIRECCION, String ESTADO,
+                                          String CODCLIENTE, String CAMPA, String TIPOVIA, String DESCDIRECCION,
+                                          String NUMEROVIA, String EXTENSIONDIRECCION, String LOCALIDAD, String CODIGOPOSTAL,
+                                          String PROVINCIA, String TLFCONTACTO, Date FECHACREACIONSIL, Date FECHAMODIFICACIONSIL) {
         this.fileName = fileName;
         this.CODENTIDAD = CODENTIDAD;
         this.CODDIRECCION = CODDIRECCION;
@@ -40,7 +39,7 @@ public class Extraccion {
         this.FECHACREACIONSIL = FECHACREACIONSIL;
         this.FECHAMODIFICACIONSIL = FECHAMODIFICACIONSIL;
     }
-        public String getfileName() {
+    public String getfileName() {
         return fileName;
     }
 
@@ -124,7 +123,7 @@ public class Extraccion {
 
     @Override
     public String toString() {
-        return "Extraccion{" +
+        return "EntidadesYDireccionesDeLaMarca{" +
                 "fileName='" + fileName + '\'' +
                 ", CODENTIDAD='" + CODENTIDAD + '\'' +
                 ", CODDIRECCION='" + CODDIRECCION + '\'' +
@@ -145,7 +144,7 @@ public class Extraccion {
     }
 
     public static void main(String[] args) {
-        Extraccion data = new Extraccion(
+        EntidadesYDireccionesDeLaMarca data = new EntidadesYDireccionesDeLaMarca(
                 "C:\\Users\\rafael.monsalve\\Documents\\Astara\\INPUT\\ENTDIR_CO_20230721171152(2).txt",
                 "CODENTIDAD", "CODDIRECCION", "ESTADO", "CODCLIENTE", "CAMPA", "TIPOVIA", "DESCDIRECCION",
                 "NUMEROVIA", "EXTENSIONDIRECCION", "LOCALIDAD", "CODIGOPOSTAL", "PROVINCIA", "TLFCONTACTO",
@@ -154,3 +153,4 @@ public class Extraccion {
         System.out.println(data.toString());
     }
 }
+
