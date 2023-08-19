@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class OrdenesDeTransporte {
+public class OrdernesDeTransporte {
     private int lineaId;
     private String estado;
     private String codCliente;
@@ -22,7 +22,7 @@ public class OrdenesDeTransporte {
     private Date fechaMaxEntrega;
 
     // Constructor
-    public OrderInfo(int lineaId, String estado, String codCliente, String campa, String bastidor,
+    public OrdenesDeTransporte(int lineaId, String estado, String codCliente, String campa, String bastidor,
                      String matricula, String codOrigen, String codDestino, String transportadoBal,
                      Date fechaSolicitudOrden, String refCliente, String prioridad, String codFamilia,
                      String descFamilia, String codModelo, String descModelo, String codAcabado,
@@ -60,7 +60,7 @@ public class OrdenesDeTransporte {
 
     @Override
     public String toString() {
-        return "OrderInfo{" +
+        return "OrdenesDeTransporte{" +
                 "lineaId=" + lineaId +
                 ", estado='" + estado + '\'' +
                 ", codCliente='" + codCliente + '\'' +
@@ -82,4 +82,5 @@ public class OrdenesDeTransporte {
                 ", fechaMaxEntrega=" + fechaMaxEntrega +
                 '}';
     }
+
 }
