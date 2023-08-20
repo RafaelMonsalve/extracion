@@ -40,12 +40,12 @@ public class Astara {
                 //System.out.println(br.readLine());
 
 
-                CODENTIDAD = line.substring(1, 11);
-                CODDIRECCION = line.substring(11, 19);
-                ESTADO = line.substring(19, 21);
-                CODCLIENTE = line.substring(21, 23);
-                CAMPA = line.substring(30, 81);
-                TIPOVIA = line.substring(111,130);
+                CODENTIDAD = line.substring(0,11);
+                CODDIRECCION = line.substring(11,18);
+                ESTADO = line.substring(18, 20);
+                CODCLIENTE = line.substring(20, 22);
+                CAMPA = line.substring(22,30);
+                TIPOVIA = line.substring(30,112);
                 DESCDIRECCION=line.substring(130,161);
                 NUMEROVIA=line.substring(211,215);
                 EXTENSIONDIRECCION=line.substring(210,240);
@@ -89,5 +89,5 @@ public class Astara {
     }
 }
 
-    
+
 
